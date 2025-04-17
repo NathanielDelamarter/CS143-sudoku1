@@ -3,10 +3,10 @@ import java.io.*;
 
 public class SudokuBoard{
 
-   private char[][] board = new char[9][9];
+   private char[][] board;
    
    public SudokuBoard(String filename){
-      
+      board = new char[9][9];
       try {
          Scanner file = new Scanner(new File(filename));
          int row = 0;
